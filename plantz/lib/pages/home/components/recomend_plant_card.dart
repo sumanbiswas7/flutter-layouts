@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plantz/pages/details/details_page.dart';
 import 'package:plantz/theme/constants.dart';
 
 class ScrollableRecomendedPlants extends StatelessWidget {
@@ -17,7 +18,12 @@ class ScrollableRecomendedPlants extends StatelessWidget {
             image: "assets/images/image_1.png",
             price: "400",
             title: "Samantha",
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const PlantDetailsPage()));
+            },
           ),
           RecomendPlantCard(
             country: "China",

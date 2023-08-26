@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
       key: scaffoldKey,
       drawer: const Drawer(),
       appBar: buildAppBar(scaffoldKey),
-      bottomNavigationBar: AppBottomNavbar(),
+      bottomNavigationBar: const AppBottomNavBar(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
